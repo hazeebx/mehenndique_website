@@ -12,9 +12,7 @@ body{
     font-family:Montserrat, sans-serif;
 
     overflow-x:hidden;
-        width:min(100%, 90rem); /* 1440px */
 
-    margin-inline:auto;
 
 }
 
@@ -30,23 +28,7 @@ h6{
 
 }
 
-.page{
 
-    width:min(100%, 90rem); /* 1440px */
-
-    margin-inline:auto;
-
-}
-
-@media (max-width:48rem){ /* 768px */
-
-    .page{
-
-        width:100%;
-
-    }
-
-}
 
 
 /* ---------------- NAV ---------------- */
