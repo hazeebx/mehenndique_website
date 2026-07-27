@@ -121,6 +121,57 @@ body{
 
 }
 
+/* ---------------- MOBILE HERO ---------------- */
+
+@media (max-width:768px){
+
+    .hero{
+
+        padding:1.5rem 1.5rem 3rem;
+
+    }
+
+    .home-btn{
+
+        align-self:flex-start;
+
+        margin-bottom:2.5rem;
+
+        font-size:.95rem;
+
+    }
+
+    .hero-small{
+
+        font-size:.7rem;
+
+        letter-spacing:4px;
+
+        margin-bottom:1rem;
+
+    }
+
+    .hero h1{
+
+        font-size:clamp(3rem,12vw,4.5rem);
+
+        line-height:1.05;
+
+        margin-bottom:1.25rem;
+
+    }
+
+    .hero p{
+
+        max-width:100%;
+
+        font-size:1rem;
+
+        line-height:1.7;
+
+    }
+
+}
 
 /* ==========================================
    FEATURE IMAGE
@@ -263,8 +314,6 @@ nav{
 }
 
 .hero{
-
-    min-height:80vh;
 
 }
 
