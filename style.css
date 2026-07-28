@@ -1094,7 +1094,7 @@ nav a{
 
     font-size:20px;
 
-    line-height:1.9;
+    line-height:1.5;
 
     text-align:center;
 
@@ -1106,7 +1106,7 @@ nav a{
 
     position:absolute;
 
-    width:400px;
+    width:380px;
 
     left:0;
     bottom:0;
@@ -1151,15 +1151,15 @@ nav a{
 
     .about-text p{
 
-        font-size:1rem;
+        font-size:0.8rem;
 
-        line-height:1.8;
+        line-height:1.4;
 
     }
 
     .henna-left{
 
-        width:220px;
+        width:180px;
 
         left:-90px;
 
@@ -1171,9 +1171,9 @@ nav a{
 
     .henna-right{
 
-        width:150px;
+        width:100px;
 
-        right:-60px;
+        right:-20px;
 
         top : 0px;
 
@@ -1209,26 +1209,6 @@ footer{
 
 }
 
-.footer-links{
-
-    display:flex;
-
-    justify-content:center;
-
-    gap:40px;
-
-    margin-bottom:40px;
-
-}
-
-.footer-links a{
-
-    color:white;
-
-    text-decoration:none;
-
-}
-
 .footer-contact{
 
     display:flex;
@@ -1254,6 +1234,76 @@ footer{
     opacity: 0.8;    /* Optional: make it a bit subtler */
 }
 
+.footer-contact{
+
+    display:flex;
+    justify-content:center;
+    gap:2rem;
+    flex-wrap:wrap;
+
+    margin-bottom:3rem;
+
+}
+
+.contact-card{
+
+    width:220px;
+
+    padding:1.6rem;
+
+    text-decoration:none;
+    color:white;
+
+    border:1px solid rgba(255,255,255,.12);
+
+    border-radius:18px;
+
+    background:rgba(255,255,255,.04);
+
+    transition:.3s;
+
+}
+
+.contact-card:hover{
+
+    transform:translateY(-6px);
+
+    background:rgba(255,255,255,.08);
+
+    border-color:rgba(255,255,255,.25);
+
+}
+
+.contact-card i{
+
+    font-size:1.9rem;
+
+    margin-bottom:1rem;
+
+    color:#D8B16A;
+
+}
+
+.contact-card h4{
+
+    font-size:1.05rem;
+
+    font-weight:500;
+
+    margin-bottom:.45rem;
+
+}
+
+.contact-card span{
+
+    font-size:.9rem;
+
+    color:rgba(255,255,255,.75);
+
+    word-break:break-word;
+
+}
+
 /* ---------------- MOBILE FOOTER ---------------- */
 
 @media (max-width:768px){
@@ -1273,27 +1323,16 @@ footer{
 
     }
 
-    .footer-links{
+
+    .footer-contact{
+
+        display:flex;
+
+        flex-direction:row;
 
         flex-wrap:wrap;
 
         justify-content:center;
-
-        gap:1.25rem;
-
-        margin-bottom:2rem;
-
-    }
-
-    .footer-links a{
-
-        font-size:.95rem;
-
-    }
-
-    .footer-contact{
-
-        flex-direction:column;
 
         gap:1rem;
 
@@ -1301,10 +1340,43 @@ footer{
 
     }
 
-    .footer-contact p,
-    .footer-contact a{
+    .contact-card{
 
-        font-size:.95rem;
+        flex:0 0 calc(50% - 0.5rem);
+
+        max-width:160px;
+
+        width:calc(50% - 0.5rem);
+
+        padding:1rem .75rem;
+
+        box-sizing:border-box;
+
+    }
+
+    .contact-card i{
+
+        font-size:1.4rem;
+
+        margin-bottom:.75rem;
+
+    }
+
+    .contact-card h4{
+
+        font-size:.9rem;
+
+        margin-bottom:.35rem;
+
+    }
+
+    .contact-card span{
+
+        font-size:.72rem;
+
+        line-height:1.4;
+
+        word-break:break-word;
 
     }
 
@@ -1323,6 +1395,10 @@ footer{
     }
 
 }
+
+
+
+
 
 @keyframes float {
 
