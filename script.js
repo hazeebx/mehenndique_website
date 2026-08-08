@@ -18,3 +18,5 @@ gsap.to(path, {
         // markers: true
     }
 });
+
+console.log("Yeh i didnt put all the pics into the images folder. so what");
